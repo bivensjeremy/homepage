@@ -1,0 +1,142 @@
+/* #f6f5f5
+#ee6f57
+#1f3c88
+#070d59 */
+
+body {
+  background-color: #f6f5f5;
+  font-family: 'Montserrat', sans-serif;
+  color: #1f3c88;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+.animatedFadeInUp {
+  opacity: 0
+}
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+/* standard navbar links */
+.nav-link {
+  text-decoration: none;
+  color: #1f3c88;
+}
+
+#navigation-section a:hover{
+  background-color: #1f3c88;
+  border-radius: 5%;
+  color: white;
+}
+/* Index Styles */
+.logobanner {
+  padding: 10% 0% 5%;
+}
+
+#about-section, #pricing-section, #what-i-offer, #skills-section {
+  background-color: #1f3c88;
+}
+
+#about-section, #set-apart p, .card-text{
+  text-align: justify;
+  padding: 0% 12%;
+}
+
+#what-i-offer, #set-apart, #call-to-action {
+  padding: 0% 10% 5%;
+  text-align: center;
+}
+
+/* About Me Page Styles */
+
+.triangle-down {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-top: 500px solid #1f3c88;
+  display: inline-block;
+  margin: auto;
+}
+
+/* Portfolio Styles */
+.header-section{
+  padding: 10% 0% 0% 0%;
+}
+
+/* Services Styles */
+
+.snip1214 .plan-title {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  background-color: #1f3c88;
+}
+
+.snip1214 .plan-features .row {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 5%;
+  margin: 0%;
+}
+.snip1214 .plan-features .row:nth-child(even) {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.customOrangeButton {
+  background-color: #ee6f57;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .snip1214 .plan-title{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .triangle-down, .hori-timeline .events .event-list:before{
+    visibility: hidden;
+  }
+}
+
+.hori-timeline .events {
+  border-top: 5px solid #1f3c88;
+}
+.hori-timeline .events .event-list {
+  width: 100%;
+  padding-top: 45px;
+  position: relative;
+}
+
+.hori-timeline .events .event-list:before {
+  content: "";
+  position: absolute;
+  height: 46px;
+  border-right: 3px solid #1f3c88;
+  top: 0;
+}
